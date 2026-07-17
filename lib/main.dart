@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_app/navigation/app_router.dart';
 import 'package:practice_app/screens/splash_screen.dart';
 
 void main() {
@@ -10,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      routerConfig: AppRouter.router,
     );
   }
 }

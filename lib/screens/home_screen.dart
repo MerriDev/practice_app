@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:practice_app/screens/profile_screen.dart';
 import 'package:practice_app/widgets/custom_button.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,15 +41,7 @@ class HomeScreen extends StatelessWidget {
               CustomButton(
                 text: 'Get Started',
                 onPressed: () {
-                  print('Get Started Clicked!');
-                },
-              ),
-              const SizedBox(height: 15),
-              CustomButton(
-                text: 'Log Out',
-                backgroundColor: Colors.redAccent,
-                onPressed: () {
-                  print('Log Out Clicked!');
+                  context.push('/profile', extra: 'Muhammad Umair');
                 },
               ),
             ],
