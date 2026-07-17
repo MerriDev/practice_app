@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:practice_app/screens/profile_screen.dart';
 import 'package:practice_app/widgets/custom_button.dart';
 
 class HomeScreen extends StatelessWidget {
