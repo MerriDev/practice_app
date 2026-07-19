@@ -163,6 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   if (value.trim().length < 3) {
                     return 'Name must be at least 3 character long';
                   }
+                  return null;
                 },
               ),
               const SizedBox(height: 30),
