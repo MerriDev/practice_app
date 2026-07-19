@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     context.push(
-                      'location',
+                      '/profile',
                       extra: _nameController.text.trim(),
                     );
                   }
