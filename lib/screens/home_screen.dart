@@ -161,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     return 'Name cannot be empty!';
                   }
                   if (value.trim().length < 3) {
-                    return 'Name must be at least 3 character long';
+                    return 'Name must be at least 3 character long!';
                   }
                   return null;
                 },
