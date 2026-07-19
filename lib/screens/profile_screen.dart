@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  final String userName;
+  // final String userName;
 
+  // const ProfileScreen({super.key, required this.userName});
+
+  final String userName;
   const ProfileScreen({super.key, required this.userName});
 
   @override
@@ -31,6 +34,7 @@ class ProfileScreen extends StatelessWidget {
             const Icon(Icons.account_circle, size: 100, color: Colors.blue),
             const SizedBox(height: 20),
             Text(
+              // 'Welcome, $userName',
               'Welcome, $userName',
               style: TextStyle(
                 fontSize: 24,
